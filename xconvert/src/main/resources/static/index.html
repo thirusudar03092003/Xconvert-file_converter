@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xconvert - File Format Converter</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Xconvert</h1>
+            <p>Convert your files between different formats</p>
+            <div class="nav-links">
+                <a href="index.html" class="active">Single File Conversion</a>
+                <a href="batch.html">Batch Conversion</a>
+            </div>
+        </header>
+        
+        <main>
+            <div class="converter-box">
+                <h2>File Converter</h2>
+                
+                <form id="uploadForm">
+                    <div class="form-group">
+                        <label for="file">Select File</label>
+                        <div id="drop-area" class="drop-area">
+                            <p>Drag & drop files here or</p>
+                            <input type="file" id="file" name="file" class="file-input" required>
+                            <label for="file" class="file-label">Browse Files</label>
+                            <div id="file-info" class="file-info"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="sourceFormat">Source Format</label>
+                        <select id="sourceFormat" name="sourceFormat" required>
+                            <option value="">Auto-detect</option>
+                            <option value="csv">CSV</option>
+                            <option value="json">JSON</option>
+                            <option value="xml">XML</option>
+                            <option value="txt">TXT</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="targetFormat">Target Format</label>
+                        <select id="targetFormat" name="targetFormat" required>
+                            <option value="">Select Target Format</option>
+                            <option value="csv">CSV</option>
+                            <option value="json">JSON</option>
+                            <option value="xml">XML</option>
+                            <option value="txt">TXT</option>
+                        </select>
+                    </div>
+                    
+                    <button type="submit" id="convertBtn">Convert</button>
+                </form>
+                
+                <div class="progress-container">
+                    <div class="progress-bar" id="progressBar"></div>
+                </div>
+                
+                <div id="resultContainer" class="result-container">
+                    <h3>Conversion Result</h3>
+                    <div id="resultMessage"></div>
+                    <div class="download-container">
+                        <a id="downloadLink" class="download-btn" style="display: none;">Download Converted File</a>
+                        <button id="directDownloadBtn" class="download-btn secondary" style="display: none;">Direct Download</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>&copy; 2025 Xconvert - Developed by Thiru Sudar S L</p>
+        </footer>
+    </div>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>

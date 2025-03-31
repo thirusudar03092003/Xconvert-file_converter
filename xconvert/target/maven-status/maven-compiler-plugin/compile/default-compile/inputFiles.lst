@@ -1,0 +1,15 @@
+/mnt/d/Xconvert/xconvert/src/main/java/com/xconvert/hadoop/CSVToJSONReducer.java
+/mnt/d/Xconvert/xconvert/src/main/java/com/xconvert/service/TaskService.java
+/mnt/d/Xconvert/xconvert/src/main/java/com/xconvert/model/BatchJob.java
+/mnt/d/Xconvert/xconvert/src/main/java/com/xconvert/model/ConversionRequest.java
+/mnt/d/Xconvert/xconvert/src/main/java/com/xconvert/hadoop/ConversionJob.java
+/mnt/d/Xconvert/xconvert/src/main/java/com/xconvert/model/BatchJobItem.java
+/mnt/d/Xconvert/xconvert/src/main/java/com/xconvert/util/JsonFixer.java
+/mnt/d/Xconvert/xconvert/src/main/java/com/xconvert/util/FileUtils.java
+/mnt/d/Xconvert/xconvert/src/main/java/com/xconvert/service/BatchJobService.java
+/mnt/d/Xconvert/xconvert/src/main/java/com/xconvert/App.java
+/mnt/d/Xconvert/xconvert/src/main/java/com/xconvert/hadoop/CSVToJSONMapper.java
+/mnt/d/Xconvert/xconvert/src/main/java/com/xconvert/config/AsyncConfig.java
+/mnt/d/Xconvert/xconvert/src/main/java/com/xconvert/controller/BatchController.java
+/mnt/d/Xconvert/xconvert/src/main/java/com/xconvert/controller/ConversionController.java
+/mnt/d/Xconvert/xconvert/src/main/java/com/xconvert/service/ConversionService.java

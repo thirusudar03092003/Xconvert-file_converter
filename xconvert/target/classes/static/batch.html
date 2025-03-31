@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xconvert - Batch File Conversion</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/batch.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Xconvert</h1>
+            <p>Batch File Conversion with Hadoop</p>
+            <div class="nav-links">
+                <a href="index.html">Single File Conversion</a>
+                <a href="batch.html" class="active">Batch Conversion</a>
+            </div>
+        </header>
+        
+        <main>
+            <div class="converter-box">
+                <h2>Batch File Converter</h2>
+                
+                <div id="step1" class="step active">
+                    <h3>Step 1: Select Target Format</h3>
+                    <div class="form-group">
+                        <label for="targetFormat">Target Format</label>
+                        <select id="targetFormat" name="targetFormat" required>
+                            <option value="">Select Target Format</option>
+                            <option value="csv">CSV</option>
+                            <option value="json">JSON</option>
+                            <option value="xml">XML</option>
+                            <option value="txt">TXT</option>
+                        </select>
+                    </div>
+                    
+                    <button id="createBatchBtn" class="next-btn">Next</button>
+                </div>
+                
+                <div id="step2" class="step">
+                    <h3>Step 2: Upload Files</h3>
+                    <div class="batch-drop-area" id="batchDropArea">
+                        <p>Drag & drop multiple files here or</p>
+                        <input type="file" id="batchFiles" name="files" class="file-input" multiple>
+                        <label for="batchFiles" class="file-label">Browse Files</label>
+                    </div>
+                    
+                    <div id="fileList" class="file-list"></div>
+                    
+                    <div class="button-group">
+                        <button id="backToStep1Btn" class="back-btn">Back</button>
+                        <button id="processFilesBtn" class="next-btn">Process Files</button>
+                    </div>
+                </div>
+                
+                <div id="step3" class="step">
+                    <h3>Step 3: Processing</h3>
+                    <div class="batch-progress">
+                        <div class="batch-progress-label">
+                            <span id="completedCount">0</span> / <span id="totalCount">0</span> files processed
+                        </div>
+                        <div class="batch-progress-bar">
+                            <div id="batchProgressBar" class="progress-fill"></div>
+                        </div>
+                    </div>
+                    
+                    <div id="processingStatus" class="processing-status"></div>
+                    
+                    <div class="button-group">
+                        <button id="downloadBatchBtn" class="download-btn" disabled>Download All Files</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>&copy; 2025 Xconvert - Developed by Thiru Sudar S L</p>
+        </footer>
+    </div>
+    
+    <script src="js/batch.js"></script>
+</body>
+</html>

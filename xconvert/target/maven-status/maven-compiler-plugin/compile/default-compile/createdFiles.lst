@@ -1,0 +1,15 @@
+com/xconvert/config/AsyncConfig.class
+com/xconvert/service/BatchJobService.class
+com/xconvert/util/FileUtils.class
+com/xconvert/hadoop/CSVToJSONReducer.class
+com/xconvert/service/TaskService.class
+com/xconvert/hadoop/ConversionJob.class
+com/xconvert/service/ConversionService.class
+com/xconvert/controller/ConversionController.class
+com/xconvert/controller/BatchController.class
+com/xconvert/hadoop/CSVToJSONMapper.class
+com/xconvert/model/ConversionRequest.class
+com/xconvert/util/JsonFixer.class
+com/xconvert/App.class
+com/xconvert/model/BatchJob.class
+com/xconvert/model/BatchJobItem.class
