@@ -4,7 +4,7 @@
 
 Xconvert is an advanced file format converter application that leverages Apache Hadoop's distributed processing capabilities to efficiently convert files between different formats. The application supports both single file conversion and batch processing of multiple files simultaneously.
 
-![Xconvert Logo](https://via.placeholder.com/150/3498db/FFFFFF?text=Xconvert)
+
 
 ## Features
 
@@ -105,36 +105,32 @@ Copy
 ## Project Structure
 
 Xconvert/
-├── xconvert/
-│   ├── pom.xml                                  # Maven configuration
-│   ├── src/
-│   │   ├── main/
-│   │   │   ├── java/
-│   │   │   │   └── com/
+├── xconvert/                       # Main project directory
+│   ├── pom.xml                     # Maven configuration
+│   ├── src/                        # Source code
+│   │   ├── main/                   # Main application code
+│   │   │   ├── java/               # Java source files
+│   │   │   │   └── com/            # Package for project classes
 │   │   │   │       └── xconvert/
-│   │   │   │           ├── App.java             # Spring Boot application
-│   │   │   │           ├── config/              # Configuration classes
-│   │   │   │           ├── controller/          # REST controllers
-│   │   │   │           ├── hadoop/              # Hadoop MapReduce classes
-│   │   │   │           ├── model/               # Data models
-│   │   │   │           ├── service/             # Business logic services
-│   │   │   │           └── util/                # Utility classes
-│   │   │   └── resources/
-│   │   │       ├── application.properties       # Application configuration
-│   │   │       └── static/                      # Frontend files
-│   │   │           ├── index.html              # Single file conversion UI
-│   │   │           ├── batch.html              # Batch processing UI
-│   │   │           ├── css/                    # CSS stylesheets
-│   │   │           └── js/                     # JavaScript files
-│   │   └── test/
-│   │       └── java/                            # Test classes
-├── uploads/                                     # Directory for uploaded files
-├── converted/                                   # Directory for converted files
-└── temp/                                        # Directory for temporary files
+│   │   │   │           ├── App.java           # Spring Boot application entry point
+│   │   │   │           ├── config/           # Configuration classes
+│   │   │   │           ├── controller/       # REST controllers
+│   │   │   │           ├── hadoop/           # Hadoop MapReduce classes
+│   │   │   │           ├── model/            # Data models
+│   │   │   │           ├── service/          # Business logic services
+│   │   │   │           └── util/             # Utility classes
+│   │   │   └── resources/          # Application resources
+│   │   │       ├── application.properties   # Application configuration
+│   │   │       └── static/            # Frontend files
+│   │   │           ├── index.html       # Single file conversion UI
+│   │   │           ├── batch.html       # Batch processing UI
+│   │   │           ├── css/             # CSS stylesheets
+│   │   │           └── js/              # JavaScript files
+│   │   └── test/                     # Unit test classes
+│   ├── uploads/                       # Directory for uploaded files
+│   ├── converted/                     # Directory for converted files
+│   └── temp/                          # Directory for temporary files
 
-plaintext
-Type into WindowsTerminal.exe
-Copy
 
 ## Hadoop Implementation Details
 
