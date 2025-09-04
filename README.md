@@ -174,7 +174,7 @@ This project is licensed under the **MIT License**. See the `LICENSE` file for d
 
 ## Author
 
-Developed by **Thiru Sudar S L** as part of the **B.Tech AI & DS program** at **Velammal Engineering College, Ambattur**.
+Developed by **Thiru Sudar S L** as part of the **B.Tech AI & DS program** at **Velammal Engineering College, Chennai.**.
 
 ## Acknowledgments
 
